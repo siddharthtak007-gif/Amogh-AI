@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Nova AI — Intelligent Assistant</title>
+<title>AMOGH AI — Intelligent Assistant</title>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <style>
@@ -822,7 +822,7 @@
 <div class="modal-overlay open" id="api-modal">
   <div class="modal">
     <h2>🔑 Enter your API Key</h2>
-    <p>Nova AI uses the Anthropic Claude API. Enter your key to start chatting. Your key is stored only in memory and never sent to any server other than Anthropic.</p>
+    <p>AMOGH AI uses the Anthropic Claude API. Enter your key to start chatting. Your key is stored only in memory and never sent to any server other than Anthropic.</p>
     <input type="password" id="api-key-input" placeholder="sk-ant-..." autocomplete="off" />
     <div class="modal-btns">
       <button class="btn-primary" onclick="saveKey()">Start Chatting →</button>
@@ -837,7 +837,7 @@
 <header>
   <div class="logo">
     <div class="logo-icon">✦</div>
-    <span class="logo-text">Nova AI</span>
+    <span class="logo-text">AMOGH AI</span>
     <span class="logo-badge">Claude-powered</span>
   </div>
   <div class="header-actions">
@@ -855,7 +855,7 @@
   <div class="messages-wrap" id="messages">
     <div class="welcome" id="welcome">
       <div class="welcome-orb">✦</div>
-      <h1>Hi, I'm Nova</h1>
+      <h1>Hi, I'm AMOGH</h1>
       <p>An intelligent AI assistant powered by Claude. Ask me anything — coding, writing, analysis, math, and more.</p>
       <div class="suggestions">
         <button class="suggestion-card" onclick="suggest('Explain quantum entanglement in simple terms')">
@@ -895,7 +895,7 @@
         <button id="send-btn" onclick="sendMessage()">➤</button>
       </div>
     </div>
-    <div class="footer-note">Nova can make mistakes. Verify important info.</div>
+    <div class="footer-note">AMOGH can make mistakes. Verify important info.</div>
   </div>
 </div>
 
@@ -1100,7 +1100,7 @@ async function sendMessage() {
     const body = {
       model: 'claude-sonnet-4-20250514',
       max_tokens: 1000,
-      system: `You are Nova, an intelligent and helpful AI assistant. You are knowledgeable, friendly, concise yet thorough. Format your responses using markdown when appropriate — use code blocks for code, tables for comparisons, bullet points for lists. Always be accurate and helpful. Today's date is ${new Date().toLocaleDateString('en-US', {weekday:'long',year:'numeric',month:'long',day:'numeric'})}.`,
+      system: `You are AMOGH, an intelligent and helpful AI assistant. You are knowledgeable, friendly, concise yet thorough. Format your responses using markdown when appropriate — use code blocks for code, tables for comparisons, bullet points for lists. Always be accurate and helpful. Today's date is ${new Date().toLocaleDateString('en-US', {weekday:'long',year:'numeric',month:'long',day:'numeric'})}.`,
       messages: conversation
     };
 
